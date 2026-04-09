@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(docker pull:*)",
+      "Bash(docker info:*)",
+      "Bash(curl -s \"https://hub.docker.com/v2/repositories/paddlepaddle/paddleocr/tags\")",
+      "Bash(curl -I --connect-timeout 10 https://ccr-2vdh3abv-pub.cnc.bj.baidubce.com/v2/)",
+      "Bash(docker run:*)",
+      "Bash(docker exec:*)",
+      "Bash(curl -s -X POST \"http://localhost:8000/api/v1/ocr/recognize\" -F \"file=@README.md\")",
+      "Bash(curl -s \"http://localhost:8000/api/v1/health\")",
+      "Bash(docker images:*)"
+    ]
+  }
+}

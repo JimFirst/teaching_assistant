@@ -1,0 +1,21 @@
+{
+  "name": "teaching-assistant",
+  "version": "1.0.0",
+  "description": "教师助手系统",
+  "scripts": {
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "dev": "npm run dev:backend & npm run dev:frontend",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:backend:debug": "cd backend && npm run debug",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build": "cd backend && npm run build && cd ../frontend && npm run build",
+    "start": "cd backend && npm run start"
+  },
+  "keywords": [
+    "teaching",
+    "assistant",
+    "education"
+  ],
+  "author": "",
+  "license": "ISC"
+}

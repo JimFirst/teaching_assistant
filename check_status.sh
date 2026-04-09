@@ -1,0 +1,12 @@
+#!/bin/bash
+echo "系统状态检查"
+echo "=============="
+echo ""
+echo "1. 检查后台进程："
+ps aux | grep -E "node|python.*mock_ocr" | grep -v grep || echo "未找到相关进程"
+echo ""
+echo "2. Backend 编译状态:"
+[ -f "d:/test/teaching_assistant/backend/dist/index.js" ] && echo "✓ 已编译" || echo "✗ 未编译"
+echo ""
+echo "3. 配置文件检查:"
+grep "OCR_BASE_URL\|OCR baseUrl" d:/test/teaching_assistant/backend/src/config.ts || echo "配置已更新"
